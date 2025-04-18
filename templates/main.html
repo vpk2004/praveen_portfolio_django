@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalPortFolio</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    {% load static %}
+        <!-- External CSS -->
+        <link rel="stylesheet" href="{% static 'css_file/style.css' %}">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpeg" href="{% static 'image_file/vpk.jpeg' %}">
+
+</head>
+<body>
+    {% block content %}
+        <!-- Header Design -->
+        <header class="header">
+            <img src="{% static 'image_file/pklo.png' %}" style="width: 150px;">
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+            <div class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">PortFolio</a>
+                <a href="#contact">Contact</a>
+            </div>    
+        </header>
+
+        <!-- HOME SECTION DESIGN -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi, Myself</h3>
+                <h1 >Praveen Kumar V</h1>
+                <h3 style="font-size: 20px;">And I'm a <span>Web Developer</span></h3>
+                
+                <div class="social-media">
+                    <a href="https://www.facebook.com/vpk2004"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://x.com/vpraveen2k4"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/prvn.kv__/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/praveen-kv09022004/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vpk2004"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="{% static 'resume/Praveen kumar resume.pdf' %}" class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="{% static 'image_file/p1.png' %}" alt="">
+
+            </div>
+        </section>
+
+        <!-- About Section Design -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="{% static 'image_file/p2.png' %}" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading"> About <span>Me</span></h2>
+                <p>Hi, I'm Praveen — a passionate and versatile Web Developer with expertise in both frontend and backend development. I completed my schooling at St. Paul’s Matric Higher Secondary School and graduated from Gobi Arts & Science College.
+                    With a strong blend of technical skills and creative vision, I specialize in building responsive, user-friendly websites and applications. I’m driven by the idea that great design goes beyond visuals — it’s about creating smooth, meaningful experiences that leave a lasting impact.
+                    Whether it's crafting pixel-perfect interfaces or writing clean backend logic, I focus on delivering high-quality digital solutions that are both functional and beautiful.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <!-- Services Section Design -->
+        <section class="servies" id="services">
+            <h2 class="heading">My <span>Services</span></h2>
+    
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI/UX Designing</h3>
+                    <p>I'm a passionate UI/UX designer focused on creating intuitive and user-friendly digital. My design process involves user research, prototyping, and usability testing. Always eager to learn and grow in the field of user-centered design</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+    
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>As a full-stack web designer, I bring a perfect blend of creativity and technical expertise to craft fully functional, visually engaging, and user-friendly websites.I focus on delivering seamless digital experiences look great across all devices.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+    
+                <div class="services-box">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>DataBase</h3>
+                    <p>As a database specialist with expertise in MySQL, I excel at creating well-structured, optimized schemas, writing advanced queries, and ensuring the integrity, security, and performance of data. .</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PortFolio Section Design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img src="{% static 'image_file/food.jpg' %}" alt="" style="height: 300px;">
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Ultimate online food ordering destination. You're craving spicy street food, comforting home-style meals, or gourmet dishes</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img src="{% static 'image_file/py3.jpg' %}" alt="" style="height: 300px;">
+                        <div class="portfolio-layer">
+                            <h4>Python Development</h4>
+                            <p>Built two Python backend projects using Streamlit and various libraries.
+                                Developed a real-time eCommerce app with product and order features.
+                                Created a secure banking system with future-ready functionalities.
+                                Focused on performance, scalability, and smooth user experience.</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img src="{% static 'image_file/db.jpg' %}" alt="" style="height: 300px;">
+                        <div class="portfolio-layer">
+                            <h4>Database</h4>
+                            <p>I'm using python connects to MySQL using libraries like mysql-connector-python or PyMySQL.
+                                SQL queries are executed through a cursor object after establishing a connection.
+                                It's commonly used for data storage, retrieval, and management in applications.</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                <a href="#" class="re">Read More</a>
+                </div>
+        </section>
+
+        <!-- Contact Section Design -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action = "submit/" method = "POST">
+                {% csrf_token %}
+                <div class="input-box">
+                    <input type="text" name="name" id="" placeholder="Full Name">
+                    <input type="text" name="mobile_no" id="" placeholder="Mobile Number (1234-5678-90)">
+                </div>
+
+                <div class="input-box">
+                    <input type="email" name="email_address" id="" placeholder="Email Address">
+                    <input type="text" name="e_mail_subject" id="" placeholder="Email Subject">
+                </div>
+
+                <textarea name="message" cols="20" rows="7" placeholder="Your Message" id=""></textarea>
+                <input type="submit" value="Send Message"  class="btn" name="" id="">
+            </form>  
+        </section>
+
+        <!-- Footer Section Design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright <a href="#"><strong>Praveen</strong></a> | ©2025 Made by Mufasa.</p>
+            </div>
+
+            <div class="footer-icontop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+    {% endblock %}
+</body>
+</html>

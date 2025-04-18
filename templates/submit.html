@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumbit</title>
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'css_file/submit.css' %}">
+</head>
+<body>
+    {% block content %}
+        <div class = "main">
+            <h1 class="h1">SuccessFully </h1>
+            <h4 class="h2">Your Details Has been Stored in DB</h4>
+            <h4 class="h3">Well Catch You Soon....</h4>
+            <h4>Thank You For Visited My PortFolio</h4>
+
+            <button onclick="window.alert('Now You Can Safely Close Your Window')">Click It</button>
+        </div>
+    {% endblock %}
+
+    
+</body>
+</html>
